@@ -34,7 +34,7 @@ const dateFormat = require('dateformat');
 
 
 const prefix = "!"//لاتغير البرفكس
-const developers = ""//ايديك
+const developers = "726783431027064902"//ايديك
 
 ////////
 
@@ -1178,4 +1178,4 @@ const Sra7a = [
 });
 
 
-client.login('')//توكن بوتك
+client.login(process.env.TOKEN)//توكن بوتك

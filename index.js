@@ -1,13 +1,3 @@
-const express = require("express");
-const app = express();
-
-app.listen(() => console.log("start btrolie"));
-
-app.use('/ping', (req, res) => {
-  res.send(new Date());
-});
-
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const cmd = require("node-cmd");
@@ -37,6 +27,11 @@ const prefix = "!"//لاتغير البرفكس
 const developers = "726783431027064902"//ايديك
 
 ////////
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag} !`);
+          client.user.setActivity("حالتك",{type: 'WATCHING'});
+  
+  });
 
 client.on('message', message => {
     if (message.author.bot) return;

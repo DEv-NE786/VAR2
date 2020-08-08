@@ -29,7 +29,7 @@ const developers = "726783431027064902"//ايديك
 ////////
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("حالتك",{type: 'WATCHING'});
+          client.user.setActivity("!help",{type: 'PLAYING'});
   
   });
 
